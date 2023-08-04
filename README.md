@@ -21,7 +21,7 @@ As of now, sample code assumes the organisation and plant need to be created.
 * Create an account by registered at [EC3 Staging](https://staging.buildingtransparency.org)
 * Contact Apisupport@buildingtransparency.org to get access to EPD Creators permissions
 * Create an API key via [Key management section](https://staging.buildingtransparency.org/ec3/manage-apps/keys) with 
-  `READ WRITE` scopes. Store the `token` somewhere locally.
+  `READ WRITE` scopes. Store the `token`.
 * Run `TOKEN=replace_token python ./ec3_public_api_sample.py`, replacing `replace_token` with the token you got from 
   the previous step.
 
