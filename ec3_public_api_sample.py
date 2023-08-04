@@ -9,8 +9,7 @@ SEPARATOR = "_" * 40
 
 def main():
     auth_token = os.getenv("TOKEN")
-    base_url = "http://localhost:8000/openepd"
-    # base_url = "https://openepd.staging.buildingtransparency.org/api"
+    base_url = "https://openepd.staging.buildingtransparency.org/api"
     headers = {"Authorization": f"Bearer {auth_token}"}
 
     created_epd_id = None
