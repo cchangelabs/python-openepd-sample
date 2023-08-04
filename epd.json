@@ -19,6 +19,7 @@
   "date_of_issue": "2019-02-11T00:00:00Z",
   "valid_until": "2024-02-11T00:00:00Z",
   "third_party_verification_url": "https://example.com/verification_statement.document.pdf",
+  "declaration_url": "https://example.com/declaration.document.pdf",
   "declared_unit": {
     "qty": 1,
     "unit": "m3"
