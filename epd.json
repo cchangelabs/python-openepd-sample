@@ -1,0 +1,88 @@
+{
+  "doctype": "OpenEPD",
+  "private": true,
+  "third_party_verifier_email": "someone@example.com",
+  "third_party_verifier": {
+    "web_domain": "example_verifier.com"
+  },
+  "manufacturer": {
+    "web_domain": "example_manufacturer.com"
+  },
+  "program_operator": {
+    "web_domain": "example_program_operator.com"
+  },
+  "plants": [
+    {
+      "id": "865P2W3V+3W.example_manufacturer.com"
+    }
+  ],
+  "date_of_issue": "2019-02-11T00:00:00Z",
+  "valid_until": "2024-02-11T00:00:00Z",
+  "third_party_verification_url": "https://example.com/verification_statement.document.pdf",
+  "declared_unit": {
+    "qty": 1,
+    "unit": "m3"
+  },
+  "kg_per_declared_unit": {
+    "qty": 12500,
+    "unit": "kg"
+  },
+  "kg_C_per_declared_unit": {
+    "qty": 8760,
+    "unit": "kg"
+  },
+  "product_name": "Test Product",
+  "product_sku": "X111111",
+  "product_description": "A concrete mix",
+  "product_image_small": "https://example.com/image.png",
+  "product_image": "https://example.com/image.png",
+  "product_service_life_years": 100,
+  "applicable_in": [
+    "US",
+    "CA",
+    "MX"
+  ],
+  "product_usage_description": "Description",
+  "pcr": {
+    "id": "EC3CS2K2"
+  },
+  "product_classes": {
+    "io.cqd.ec3": [
+      "ReadyMix"
+    ]
+  },
+  "impacts": {
+    "TRACI 2.1": {
+      "gwp": {
+        "A1A2A3": {
+          "mean": 123,
+          "unit": "kgCO2e",
+          "rsd": 0.22,
+          "dist": "log-normal"
+        }
+      }
+    }
+  },
+  "resource_uses": {
+    "RPRe": {
+      "A1A2A3": {
+        "mean": 123,
+        "unit": "m** 2 * kg/ hr **2",
+        "rsd": 0.22,
+        "dist": "log-normal"
+      }
+    }
+  },
+  "version": 1,
+  "specs": {
+    "concrete": {
+      "strength_28d": "3 MPa"
+    }
+  },
+  "attachments": {
+    "datasheet": "https://somemanufacturer.com/datasheets/abcd1234"
+  }
+}
+
+
+
