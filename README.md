@@ -5,6 +5,9 @@
 * Public API (openEPD) for EC3: https://openepd.buildingtransparency.org/#/epds/post_epds
 * Documentation on authentication: https://staging.buildingtransparency.org/ec3/manage-apps/api-doc/guide#/02_Accessing_API/01_Authentication.md
 
+We plan to introduce new methods for organisation and plant fuzzy matching. 
+As of now, sample code assumes the organisation and plant need to be created.
+
 ## Installing
 
 * Python 3.10 or higher
