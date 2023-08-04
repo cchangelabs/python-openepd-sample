@@ -9,7 +9,7 @@ SEPARATOR = "_" * 40
 
 def main():
     auth_token = os.getenv("TOKEN")
-    base_url = "https://openepd.staging.buildingtransparency.org/api"
+    base_url = os.getenv("BASE_URL", None) or "https://openepd.staging.buildingtransparency.org/api"
     headers = {"Authorization": f"Bearer {auth_token}"}
 
     created_epd_id = None
@@ -55,6 +55,10 @@ def main():
             print(f"Read back EPD: {pprint(response.json())}")
         else:
             print(f"EPD read failed with {response.status_code}. {response.text}")
+
+    # or review on EC3
+    print_section("Review")
+    print(f"Please review the created epd at https://staging.buildingtransparency.org/ec3/epds/{created_epd_id}")
 
 
 def print_section(section_name: str):
